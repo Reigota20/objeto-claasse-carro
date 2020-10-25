@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<title>Carros</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="card mt-5 text-center">
+				<div class="card-body mt-1 text-center">
+					<h2 class="card-title">Lista de Carros</h2>
+					<div class="row">
+						<input id="inputNome" class="form-control" value="Fox" required type="text" name="" />
+					</div>
+					<div class="row">
+						<input id="inputMarca" class="form-control" value="Volkswagem" required type="text" name="" />
+					</div> 
+					<div class="row">
+						<input id="inputCombustivel" class="form-control" value="Flex" required type="text" name="" />
+					</div>
+					<div class="row">
+						<input id="inputCor" class="form-control" value="Preto" required type="text" name="" />
+					</div>
+					    <input id="inputAno" class="form-control" value="2019" required type="text" name="" />
+				</div>
+				  <div class="row">
+					<br />
+					<div class="row">
+						<div class="btn-group" role="group" aria-label="Basic example">
+							<button
+								type="button"
+								name=""
+								id="btnAdd"
+								onclick="add()"
+								class="btn btn-primary"
+								btn-lg
+								btn-block
+							>
+								Adicionar
+							</button> 
+							<button
+								type="button"
+								name=""
+								id="btnRemove"
+								onclick="remove()"
+								class="btn btn-primary"
+								btn-lg
+								btn-block
+							>
+								Remover
+							</button> 
+							<button
+								type="button"
+								name=""
+								id="btnLista"
+								onclick="clear()"
+								class="btn btn-primary"
+								btn-lg
+								btn-block
+							>
+								Limpar
+							</button> 
+							<button
+								type="button"
+								name=""
+								id="btnLista"
+								onclick="list()"
+								class="btn btn-primary"
+								btn-lg
+								btn-block
+							>
+								Listar
+							</button>
+						</div>
+					</div>
+
+					<div id="lista"></div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="nomes.js"></script>
+	</body>
+</html>
